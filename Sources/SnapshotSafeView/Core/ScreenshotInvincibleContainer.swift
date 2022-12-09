@@ -45,8 +45,11 @@ final class ScreenshotInvincibleContainer: UITextField {
         false
     }
     
-    override var isAccessibilityElement : Bool {
-        false
+    override var isAccessibilityElement: Bool {
+        get { false }
+        set {
+            // nothing
+        }
     }
     
     public override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
